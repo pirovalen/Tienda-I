@@ -1,0 +1,154 @@
+
+.head{
+    margin:0;
+    padding: 0;
+    background-color: $colorFondo;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    z-index: 1000;
+    
+
+}
+
+.nav__logo{
+    margin-left: 1rem;
+}
+
+.nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav__link{
+
+    color:$colorLetra;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.nav__links{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.nav__item{
+
+    margin:0 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+}
+
+.nav__link:hover{
+ 
+    border-bottom:solid 0.2rem $colorLetra;
+    color: $colorLetra;
+
+}
+
+.nav__burger{
+
+    color:$colorLetra;
+    background: none;
+    border:none;
+    font-size: 1.6rem;
+    display: none;
+
+}
+
+
+
+@media (max-width:768px){
+
+    
+    .nav__logo{
+
+        max-width: 70%;
+
+    }
+
+    .nav{
+        
+        background-color: $colorFondo;
+        display: flex;
+        position: fixed;
+        top:0px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    
+    }
+    
+    .nav__link{
+    
+        color:$colorLetra;
+        font-weight: 700;
+        text-decoration: none;
+    
+    }
+    
+    .nav__links{
+    
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        position:fixed;
+        top:50px;
+        width: 100%;
+        // background-color: rgba(250,222,207, 0.5);
+        align-items: center;
+        /*Modo mobil*/
+        left:100%;
+        transition:left 0.5s;
+
+    }
+    
+    .nav__item{
+    
+        margin:1rem 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+    
+    }
+    
+    .nav__link:hover{
+    
+        // color:rgb(0,180,200);
+        border-bottom:none;
+    
+    }
+    
+    .nav__burger{
+    
+        color:$colorLetra;
+        background: none;
+        border:none;
+        font-size: 1.6rem;
+        display: block;
+    
+    }
+
+    .nav__burger:hover{
+
+        cursor: pointer;
+        
+    }
+    
+    .nav__links--visible{
+
+        left:0;
+
+    }
+
+}

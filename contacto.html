@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Cachureando-Contacto</title>
+</head>
+<body>
+    <!--Bloque Header-Navbar-->
+    <header class="head">
+        <nav class="nav">
+            <a href="index.html"><img src="./img/logov2.webp" alt="imagen no encontrada" class="nav__logo"></a>
+            <button class="nav__burger"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav__links"> 
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <!-- <li class="nav__item"><a href="concacto.html" class="nav__link">Contacto</a></li> -->
+                <li class="nav__item"><a href="encuesta.html" class="nav__link">Encuesta</a></li>
+                <li class="nav__item"><a href="producto.html" class="nav__link">Productos</a></li>
+                <li class="nav__item nav__item--search">
+                    <button class="nav__buttonSearch">Buscar</button>
+                    <input type="text" class="nav__searchBox" placeholder="Buscar">    
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin Bloque Header-->
+    
+    <!--Bloque Formulario de contacto-->
+    <div class="form">
+        <div class="form__box">
+            <div class="form__img"></div>
+                <div class="form__elements">
+                    <h2>Contáctanos</h2>
+                    <input type="text" class="form__field" name="nombre" placeholder="Nombre" id="nombre">
+                    <input type="email" class="form__field" placeholder="Correo" id="correo">
+                    <input type="text" class="form__field" placeholder="Número telefónico" id="telefono"> 
+                    <textarea placeholder="Escribe un mensaje" class="form__field" id="texto"></textarea>
+                    <button class="form__button" id="enviar">Enviar</button>
+                    <div><p class="form__errorMensaje"></p></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!--Bloque Footer-->
+    <footer>
+        <div class="footer_container">
+            <div class="footer__box">
+                <h2>Contacto</h2>
+                <p>
+                    Arlegui 330<br>
+                    Viña del Mar.<br>
+                    Teléfonos: +56 32 28854211 / +56 32 28854330.<br>
+                </p>
+            
+            </div>
+            <div class="footer__socialNetworks">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <hr>
+            <p >Todos los derechos reservados © 2024 <b>Cachureando </b></p> 
+            <div class="footer__dateTime" id="reloj"></div>    
+            <div class="footer__dateTime" id="fecha"></div>
+            <br>
+        </div>
+    </footer>
+    <!--Fin bloque Footer-->
+
+    <script src="/js/contacto.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="./js/fecha_hora.js"></script>
+    <script src="https://kit.fontawesome.com/9d55460b02.js" crossorigin="anonymous"></script>
+</body>
+</html>

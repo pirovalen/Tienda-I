@@ -1,0 +1,35 @@
+.form__field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: white;
+    padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.form__field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form__field--error{
+
+    border:solid 0.2rem #DB0C07;
+
+}
+.form__field--success{
+
+    border:solid 0.2rem #34b846;
+
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.form__field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}

@@ -1,0 +1,24 @@
+.survey__title{
+    color:$colorLetra;
+    font-size: 3vw;
+}
+
+.survey__star{
+    color:$colorLetra;
+    font-size: 4vw;
+    background: transparent;
+    border: 0;
+    
+    &:hover{
+        color: $colorBotonHover;
+    }
+}
+
+.survey__results{
+    text-align: center;
+}
+
+.survey__results--legend{
+    color:$colorLetra;
+    font-size: 2.5vw;
+}

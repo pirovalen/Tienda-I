@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>SASS Cachureando</title>
+</head>
+<body>
+
+    <!--Bloque Header-Navbar-->
+    <header class="head">
+        <nav class="nav">
+            <a href="#"><img src="./img/logov2.webp" alt="imagen no encontrada" class="nav__logo"></a>
+            <button class="nav__burger"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav__links"> 
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="encuesta.html" class="nav__link">Encuesta</a></li>
+                <li class="nav__item"><a href="producto.html" class="nav__link">Productos</a></li>
+                <li class="nav__item nav__item--search">
+                    <button class="nav__buttonSearch">Buscar</button>
+                    <input type="text" class="nav__searchBox" placeholder="Buscar">    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Fin Bloque Header-->
+
+    <!--Bloque Carrusel-->
+    <section class="carousel">
+        <div class="carousel__content">
+            <div class="carousel__box">
+                <div class="carousel__element">
+                    <img class="carousel__images" src="./img/tiendainfantil.svg" >
+                </div>
+                <div class="carousel__element">   
+                    <img class="carousel__images" src="./img/productos/b2.svg">
+                </div>
+                <div class="carousel__element">   
+                    <img class="carousel__images" src="./img/productos/b3.svg">                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin bloque Carrusel-->
+
+       <!--Bloque galeria de imagenes-->
+
+       <section class="mainGallery">
+        <h2 class="mainGallery__title">Galería de imágenes</h2>
+
+        <div class="gallery">
+            <div class="gallery__father">
+                <div class="gallery__card">
+                    <div class="gallery__card__front" style="background-image: url(./img/productos/1.jpg);">
+                        <div class="gallery__bg"></div>
+                        <div class="gallery__body__card_front">
+                            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, omnis.</h1> -->
+                        </div>
+                    </div>
+                    <div class="gallery__card__back">
+                        <div class="gallery__body__card_back">
+                            <h1>RECIEN NACIDO</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas recusandae voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure necessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p> -->
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery__father">
+                <div class="gallery__card">
+                    <div class="gallery__card__front" style="background-image: url(./img/productos/19.webp);">
+                        <div class="gallery__bg"></div>
+                        <div class="gallery__body__card_front">
+                            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, omnis.</h1> -->
+                        </div>
+                    </div>
+                    <div class="gallery__card__back">
+                        <div class="gallery__body__card_back">
+                            <h1>ROPA DE 1 A 5 AÑOS</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas recusandae voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure necessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p> -->
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__father">
+                <div class="gallery__card">
+                    <div class="gallery__card__front" style="background-image: url(./img/productos/6.webp);">
+                        <div class="gallery__bg"></div>
+                        <div class="gallery__body__card_front">
+                            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, omnis.</h1> -->
+                        </div>
+                    </div>
+                    <div class="gallery__card__back">
+                        <div class="gallery__body__card_back">
+                            <h1>ACCESORIOS</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas recusandae voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure necessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p> -->
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__father">
+                <div class="gallery__card">
+                    <div class="gallery__card__front" style="background-image: url(./img/productos/9.webp);">
+                        <div class="gallery__bg"></div>
+                        <div class="gallery__body__card_front">
+                            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, omnis.</h1> -->
+                        </div>
+                    </div>
+                    <div class="gallery__card__back">
+                        <div class="gallery__body__card_back">
+                            <h1>DECORACIÓN</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas recusandae voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure necessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p> -->
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__father">
+                <div class="gallery__card">
+                    <div class="gallery__card__front" style="background-image: url(./img/productos/20.webp);">
+                        <div class="gallery__bg"></div>
+                        <div class="gallery__body__card_front">
+                            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, omnis.</h1> -->
+                        </div>
+                    </div>
+                    <div class="gallery__card__back">
+                        <div class="gallery__body__card_back">
+                            <h1>JUGUETES</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas recusandae voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure necessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p> -->
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__father">
+                <div class="gallery__card">
+                    <div class="gallery__card__front" style="background-image: url(./img/productos/15.webp);">
+                        <div class="gallery__bg"></div>
+                        <div class="gallery__body__card_front">
+                            <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, omnis.</h1> -->
+                        </div>
+                    </div>
+                    <div class="gallery__card__back">
+                        <div class="gallery__body__card_back">
+                            <h1>LIBROS</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas recusandae voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure necessitatibus voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p> -->
+                            <input type="button" value="Leer Más">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin bloque galeria de imagenes-->
+
+    <!--Bloque Footer-->
+    <footer>
+        <div class="footer_container">
+            <div class="footer__box">
+                 <h2>Contacto</h2>
+                 <p>
+                    Arlegui 330<br>
+                    Viña del Mar.<br>
+                    Teléfonos: +56 32 28854211 / +56 32 28854330.<br>
+                 </p>
+               
+            </div>
+            <div class="footer__socialNetworks">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <hr>
+            <p >Todos los derechos reservados © 2024 <b>Cachureando </b></p> 
+            <div class="footer__dateTime" id="reloj"></div>    
+            <div class="footer__dateTime" id="fecha"></div>
+            <br>
+        </div>
+    </footer>
+    <!--Fin bloque Footer-->
+    <script src="./js/fecha_hora.js"></script>
+    <script src="https://kit.fontawesome.com/9d55460b02.js" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

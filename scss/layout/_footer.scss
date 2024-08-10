@@ -1,0 +1,41 @@
+footer{
+    width: 100%;
+    background-size: cover;
+    background-color: $colorFondo;
+    font-size:0.8rem;
+    color:  $colorLetra;
+    .footer_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    
+        .footer__box{
+            display: flex;
+            flex-direction: column;
+            h2{
+                margin-bottom: 5px;
+                font-size:1rem;
+            }
+         }
+    }
+    
+    .footer__copyright{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        hr{
+            border: none;
+            height: 1px;
+            background-color: $colorLetra;
+        }
+    }
+    
+    .footer_dateTime {
+         text-align: center;
+     }
+
+}
+
+

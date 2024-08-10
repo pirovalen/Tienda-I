@@ -1,0 +1,26 @@
+@import 'abstracts/variables';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'components/carrousel';
+@import 'components/survey';
+@import 'components/cards';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'pages/contacto';
+@import 'pages/encuesta';
+@import 'pages/home';
+@import 'components/form-box';
+@import 'components/fields';
+@import 'pages/productos';
+
+
+body{
+    margin:0;
+    padding: 0;
+    background: $colorPuente;
+    //font-family: fantasy cursive;
+
+}
+
+
+

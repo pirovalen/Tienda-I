@@ -1,0 +1,115 @@
+//Moulos
+@import '../abstracts/variables';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+// colores custom del proyecto
+$custom-colors: ( 
+    "colorFondo":       $colorFondo,
+    "colorFondoHover":  $colorFondoHover,
+    "colorLetra":       $colorLetra,
+    "colorLetraHover":  $colorLetraHover,
+    "colorPuente":      $colorPuente,
+    "colorBotonHover":  $colorBotonHover,
+    "colorLetraBoton":  $colorLetraBoton,
+);
+
+// Mezcla de colores con los temas
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 6,
+  8: $spacer * 9,
+  9: $spacer * 12,
+  10: $spacer *14
+);
+
+//Estilos acordeon
+$accordion-button-color:                  $colorLetra;
+$accordion-button-bg:                     $colorFondo;
+$accordion-button-active-bg:              tint-color( $colorFondo, 30%);
+$accordion-button-active-color:           shade-color( $colorLetra, 10%);
+$accordion-border-color:                  $colorLetra;
+$accordion-bg:                            $colorFondoHover;
+$accordion-icon-color:                    $colorLetra;
+$accordion-icon-active-color:             $colorLetra;
+$accordion-button-icon:                   url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-focus-border-color:     $colorLetra;
+$accordion-button-focus-box-shadow:       $colorLetra;
+
+//Estilos checkbox
+$form-check-input-checked-color:          $colorLetra;;
+$form-check-input-checked-bg-color:       $colorLetra;;
+
+//Estilos select
+
+  //variables Select
+     $input-focus-border-color: $colorLetra; //cambiamos el valor de la variable para alterar el color en propiedad $form-select-focus-border-color
+     $input-btn-focus-color:$colorLetraHover;//cambiamos el valor de la variable para alterar el color en propiedad $form-select-focus-box-shadow 
+
+//propiedades-estilos del select     
+$form-select-color:                 $colorLetra;
+$form-select-bg:                    $colorFondoHover;
+$form-select-focus-border-color:    $input-focus-border-color;
+$form-select-focus-box-shadow:      0 0 0 $form-select-focus-width $input-btn-focus-color;
+$form-select-border-color:          $colorLetra;
+$form-select-box-shadow:            $colorLetra;
+$form-select-indicator-color:       $colorLetra;
+$form-select-indicator:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
+
+//Estilos Range
+
+    //Variables Range
+    $component-active-bg: $colorLetra;
+
+//propiedades range
+
+//dropDOwns 
+$form-range-track-bg:    $colorLetraHover;
+$form-range-thumb-bg:    $component-active-bg;
+
+$dropdown-min-width:                10rem;
+$dropdown-padding-x:                0;
+$dropdown-padding-y:                .5rem;
+$dropdown-spacer:                   .125rem;
+$dropdown-font-size:                $font-size-base;
+$dropdown-color:                    $colorLetra;
+$dropdown-bg:                       $colorFondo;
+$dropdown-border-color:             rgba($black, .15);
+$dropdown-border-radius:            $border-radius;
+$dropdown-border-width:             $border-width;
+$dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width);
+$dropdown-divider-bg:               $dropdown-border-color;
+$dropdown-divider-margin-y:         $spacer * .5;
+$dropdown-box-shadow:               $box-shadow;
+
+$dropdown-link-color:               $gray-900;
+$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%);
+$dropdown-link-hover-bg:            $gray-200;
+
+$dropdown-link-active-color:        $component-active-color;
+$dropdown-link-active-bg:           $component-active-bg;
+
+$dropdown-link-disabled-color:      $gray-500;
+
+$dropdown-item-padding-y:           $spacer * .25;
+$dropdown-item-padding-x:           $spacer;
+
+$dropdown-header-color:             $gray-600;
+$dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x;
+
+
+@import"../../node_modules/bootstrap/scss/bootstrap.scss";

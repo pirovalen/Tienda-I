@@ -1,0 +1,81 @@
+//Inicio del header
+    //busqueda de header
+    .nav__item--search{
+        margin-left: 3rem;
+        flex-grow: 1;
+    }
+
+    .nav__buttonSearch{
+        background-color: $colorLetra;
+        border-radius: 15px;
+        color: $colorLetraBoton;
+        text-decoration: none;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: all 0.8s;
+        &:hover{
+            //color:white;
+            background-color: $colorBotonHover;
+        
+        }
+    }   
+    //fin componentes headers
+
+    //Inicio del Footer
+    .footer__socialNetworks{
+        display: flex;
+        flex-direction: column;
+        
+        h2{
+            margin-bottom: 5px;
+            font-size:1rem;
+            font-family: 'Roboto';
+            font-weight: bold;
+        }
+
+        a{
+            color: $colorLetra;
+            font-weight: 600;
+              &:hover{
+                color:$colorBotonHover
+            }
+        }
+    }
+    // Fin Footer
+
+    //Inicio boton enviar
+    .form__button{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background-color: #756E97;
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    .boton:hover{
+        background-color: #946FA3;
+    }
+    //Fin boton enviar
+
+    //inicio componentes producto
+    .aside__button{
+
+        font-family: 'Roboto';
+        margin-top: 10px;
+        background-color: $colorLetra;
+        border-radius: 15px;
+        color: $colorLetraBoton;
+        text-decoration: none;
+        border: none;
+        padding: 0.5rem;
+        width: 100%;
+        cursor: pointer;
+
+    }
+
+    //
